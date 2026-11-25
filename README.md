@@ -1,22 +1,31 @@
-# Job Hunt Board 🎯
+# 💼 Job Hunt Board
 
-A kanban board for the job hunt. Drag applications from **Applied** to **Interview** to **Offer** (or **Rejected**), keep notes, links and priorities, and watch your pipeline stats update live.
+A kanban board for the job hunt. Drag applications between Applied, Interview, Offer and Rejected, keep notes, links and priorities, and watch your pipeline stats update live.
+
+![Job Hunt Board in action](docs/screenshot.png)
 
 **Live demo:** https://malakmo7amed309.github.io/job-hunt-board/
 
-## Features
+## Standout feature
 
-- Drag & drop cards between and within columns (@dnd-kit)
-- Add, edit and delete applications (company, role, location, salary, link, priority, notes)
-- Live pipeline stats: total applications, interviews, offers, response rate
-- Instant search across company, role, location and notes
-- Everything persists in `localStorage` — no account, no backend
-- Ships with realistic demo data you can reset any time
-- Fully responsive: horizontal board scroll on mobile, touch drag support
+Real drag and drop between pipeline stages (keyboard accessible, powered by @dnd-kit) plus live pipeline analytics: total applications, interviews, offers and response rate recalculate with every move.
+
+## What it does
+
+- Drag cards between Applied / Interview / Offer / Rejected, or reorder within a column.
+- Add, edit and delete applications with company, role, location, salary, job link, priority and notes.
+- Instant search across companies and roles.
+- Pipeline stats bar: applications, interviews, offers, response rate.
+- Everything persists in the browser via localStorage; seeds with realistic demo data and offers a one-click reset.
+- Fully responsive, no backend needed.
 
 ## Stack
 
-React · Vite · Tailwind CSS v4 · @dnd-kit
+- React + Vite
+- Tailwind CSS v4
+- @dnd-kit for drag and drop
+- localStorage for persistence
+- Space Grotesk + Inter type, dark dashboard design
 
 ## Run locally
 
@@ -25,14 +34,4 @@ npm install
 npm run dev
 ```
 
-## Build
-
-```bash
-npm run build
-```
-
-The production build is a single self-contained `index.html` (via `vite-plugin-singlefile`), served from this repo's `docs/` folder with GitHub Pages.
-
----
-
-Built by [Malak Mohamed](https://malakmo7amed309.github.io/) as a portfolio project.
+The production build is a single self-contained `docs/index.html`, deployed to GitHub Pages from the `docs/` folder.
