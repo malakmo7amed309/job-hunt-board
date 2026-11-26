@@ -1,4 +1,4 @@
-# 💼 Job Hunt Board
+# Job Hunt Board
 
 A kanban board for the job hunt. Drag applications between Applied, Interview, Offer and Rejected, keep notes, links and priorities, and watch your pipeline stats update live.
 
